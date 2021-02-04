@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* reset */
+
+
+/* reset */
+
+/*body{
+	background-image: url(../images/bg_size.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	 >>>이런식으로 배경이미지 넣는건 왜곡현상때문에 비추천
+}  */
+
+
+div#bg_Img{
+	width: 700px;
+	height: 698px;
+/*	border: 1px solid #000;*/
+	margin: 10px auto;
+	background-image: url(../images/bg_size.png);
+
+	position: absolute;
+	top: -190px;
+}
+
+
+div#boxArea{
+	width: 520px;
+	height: 140px;
+	display: flex;
+	justify-content: space-between; /*공간이 좌우가 균등하게 벌어져서 붙여짐.*/
+	padding-top: 10px;
+
+
+	/*border: 1px solid #000;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#boxArea>div{
+	width: 120px;
+	height: 100px;
+	/*border: 1px solid #000;*/
+
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	padding-top: 26px;
+
+	background-color: #555;
+
+}
+
+#boxArea>div:nth-child(2){
+	opacity: 0.8;
+}
+
+
+#boxArea>div:nth-child(3){
+	opacity: .5;
+}
+
+
+#boxArea>div:nth-child(4){
+	opacity: .2;
+}
+
+div#content{
+	width: 700px;
+	height: 260px;
+	/*border: 1px solid #f00; 구분선*/
+
+	overflow: hidden;
+
+	position: relative;
+}
